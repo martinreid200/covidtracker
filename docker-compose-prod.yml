@@ -1,0 +1,43 @@
+version: '3.1'
+services:
+    web:
+        image: nginx:1.19-alpine
+        container_name: dash_nginx
+        volumes:
+            - ./web/nginx-prod.conf:/etc/nginx/conf.d/default.conf
+        networks:
+            - frontend-network
+        ports:
+            - 80:80
+        restart: unless-stopped
+        depends_on:
+            - app
+    cache:
+        image: redis:latest
+        container_name: dash_redis
+        volumes:
+            - ./app/src/data/:/data/
+        entrypoint: redis-server --appendonly yes
+        hostname: redishost
+        restart: unless-stopped
+        networks:
+            - backend-network
+        ports:
+            - 6379:6379
+    app:
+        build: app
+        container_name: dash_app
+        volumes:
+            - ./app/src/:/code/
+        networks:
+            - frontend-network
+            - backend-network
+        ports:
+            - 5001:5001
+        restart: unless-stopped
+        depends_on:
+            - cache
+
+networks:
+    frontend-network:
+    backend-network:

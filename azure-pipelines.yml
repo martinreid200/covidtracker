@@ -1,0 +1,19 @@
+pool:
+ vmImage: 'ubuntu-latest'
+
+steps:
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'mrvm1'
+    contents: |
+      **/*.py
+      **/*.dat
+      **/*.json
+      **/*.jpg
+      **/*.css
+      **/*.yml
+      **/*.conf
+      **/*.txt
+      **/Dockerfile
+    targetFolder: '/home/martin/dev/dash'
+    readyTimeout: '20000'

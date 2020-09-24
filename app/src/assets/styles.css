@@ -1,0 +1,127 @@
+#page-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #F6F6F6;
+}
+
+
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+
+#page-content {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: #F8F8F8;
+}
+
+table {
+  width: 100%;
+  overflow:auto;
+}
+
+th {
+  background-color: #5A6268;
+  color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-weight: normal;
+}
+
+tr:nth-child(odd) {
+  background-color: #F8F8F8;
+}
+
+td {
+  border: solid 1px #DDEEEE;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+
+td:first-child{
+  text-align: left;
+}
+
+*/
+
+
+
+.dash-table-container .row {
+  display: block;
+  margin: 0;
+}
+
+/*
+.dash-spreadsheet-container .dash-spreadsheet-inner table {
+  border-collapse: collapse;
+  font-family: monospace;
+  --accent: hotpink;
+  --border: lightgrey;
+  --text-color: #3c3c3c;
+  --hover: #fdfdfd;
+  --background-color-ellipses: #fdfdfd;
+  --faded-text: #fafafa;
+  --faded-text-header: #b4b4b4;
+  --selected-background: rgba(255, 65, 54, 0.2);
+  --faded-dropdown: #f0f0f0;
+  --muted: #c8c8c8;
+}
+*/
+
+/*
+.dash-spreadsheet-container .sort
+{
+  padding-left: 1em !important;
+  float: right !important;
+}
+*/
+
+/*
+
+th.dash-header div {
+  display:flex;
+  background-color: #5A6268;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  white-space: pre-wrap;
+}
+
+*/
+
+/*
+th.dash-header div span.column-header-name {
+  order: 1;
+}
+
+th.dash-header div span.column-header--sort {
+  order: 2;
+  width: 100%;
+  text-align: left;
+}
+
+span.column-header-name:after {
+  content:"\00a0";
+}
+*/
+
+/*
+
+--accent: transparent  !important;
+  --text-color: transparent !important;
+  --hover: transparent !important;
+  --background-color-ellipses: transparent !important;
+  --faded-text: transparent !important;
+  --faded-text-header: transparent !important;
+  --selected-background: transparent !important;
+  --faded-dropdown: transparent !important;
+  --muted: transparent !important;
+*/

@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+
+# C extensions
+*.so
+
+# Logs
+*.log
+
+# Redis
+*.aof
+*.rdb
+
+# Jupyter notebooks
+*.ipynb
+
+*.png
